@@ -12,9 +12,11 @@ import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
+import javax.persistence.Table;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.Size;
 
@@ -36,6 +38,7 @@ import lombok.ToString;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
+@Table(name = "USERS")
 public class UserEntity {
 	
 	
@@ -71,6 +74,7 @@ public class UserEntity {
 		private UserRole role;
 		
 		@ManyToOne(fetch = FetchType.LAZY)
+		@JoinColumn(name = "membership")
 		private MembershipEntity membership;
 		
 		@Enumerated(EnumType.STRING)
