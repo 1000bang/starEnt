@@ -1,6 +1,6 @@
 
 server: 
-  port: 9090
+  port: 8080
   servlet:
     context-path: "/"
 
@@ -8,7 +8,7 @@ server:
 spring:
   mvc:
     view:
-      prefix: /WEB_INF/views/
+      prefix: "/WEB-INF/views/" 
       suffix: .jsp
   datasource:
     driver-class-name : com.mysql.cj.jdbc.Driver
@@ -19,7 +19,7 @@ spring:
   jpa:
     open-in-view: true
     hibernate:
-      ddl-auto : create
+      ddl-auto : update
       naming:
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
       user-new-id-generator-mappings: false
@@ -30,3 +30,6 @@ spring:
   jasckson:
     serialization:
       fail-on-empty-beans: false
+      
+      
+      
