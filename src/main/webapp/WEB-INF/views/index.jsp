@@ -3,7 +3,7 @@
 
 <%@ include file="layout/header.jsp"%>
 
-<article id="content">
+<article id="contents">
             <section id="image">
                 <div class="imageBox">
                     <ul>
@@ -14,6 +14,10 @@
                 </div>
                
             </section>
+            <section id = "mainContent">
+            
+            </section>
         </article>
+        
         
 <%@ include file="layout/footer.jsp"%>

@@ -24,13 +24,7 @@
 <br><br><br><br>
 </div>
 
-<script>
-	$('.content').summernote({
-		placeholder : '내용을 입력하세요 ',
-		tabsize : 2,
-		height : 700
-	});
-</script>
+
 
 <script type="text/javascript" src="/js/news.js">
 

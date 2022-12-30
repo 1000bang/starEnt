@@ -42,8 +42,8 @@
             font-weight: 900;
             color: #999;
         }
-        /* content */
-        #content{
+        /* contents */
+        #contents{
             width: 1600px;
             margin-top: 20px;
         }
@@ -87,6 +87,11 @@
             top: 0;
             left: 200%;
         }
+        #mainContent{
+        	width :  100%;
+        	height : 1500px;
+        }
+        
         /* footer */
         #footer{
             width: 1600px;
