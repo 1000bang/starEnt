@@ -18,12 +18,12 @@
 			</tr>
 		</thead>
 
-		<c:forEach var="num" items="${notice.content}">
+		<c:forEach var="num" items="${news.content}">
 		<tbody >
-			<tr onclick="location.href = '/notice/'+ ${num.id}" >
+			<tr onclick="location.href = '/news/'+ ${num.id}" >
 				<td>${num.id}</td>
 				<td>${num.title}</td>
-				<td>${num.userId.username}</td>
+				<td>${num.user.username}</td>
 				<td>${num.createDate}</td>
 			</tr>
 		</tbody>

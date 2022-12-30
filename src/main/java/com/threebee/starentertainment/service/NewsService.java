@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import com.threebee.starentertainment.entity.AddressEntity;
@@ -35,7 +37,7 @@ public class NewsService {
 		membershipRepository.save(member);
 		
 		UserEntity user1 =  UserEntity.builder()
-		.username("홍길sdasad")
+		.username("홍길동123")
 		.birth("12/12")
 		.password("123sadasdsa")
 		.email("123@gmail.com")
@@ -54,6 +56,18 @@ public class NewsService {
 		news.setUser(user1);
 		newsRepository.save(news);
 		
+	}
+
+	public Page<NewsEntity> findAllNews(Pageable pagealbe) {
+		return newsRepository.findAll(pagealbe);
+		
+	}
+
+	public NewsEntity getNewsDetail(int id) {
+		
+		return newsRepository.findById(id).orElseThrow(()->{
+			return new IllegalArgumentException("해당 글을 찾을 수 없습니다. ");
+		});
 	}
 
 }

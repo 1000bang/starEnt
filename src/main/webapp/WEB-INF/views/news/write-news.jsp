@@ -12,9 +12,9 @@
 			<label for="title">제목 </label> <input type="text" name="title" id="title" class="form-control">
 
 		</div>
-		<div>
+		<div class="form-group">
 			<label for="content">내용 </label>
-			<textarea name="content" id="content" rows="5" class="form-control content">
+			<textarea name="content" id="content" rows="20" class="form-control content">
 	</textarea>
 		</div>
 
