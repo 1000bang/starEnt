@@ -30,7 +30,9 @@ STS suite , trello, notion , Git Readme, PPT
 
 [https://github.com/1000bang/starEnt](https://github.com/1000bang/starEnt)
 
-##
+## 노션 :
+
+https://1000bang.notion.site/Project-373eb1c07a074cff9e69d2c44bae356d
 
 
 ## 엔티티
