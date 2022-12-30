@@ -5,6 +5,7 @@
 
 <aside>
 👉 프로젝트 구성 사항 
+
 MVC, JPA, Security, Jasper , Spring-Security-Taglibs, Jstl   
 
 외부 API 
@@ -23,11 +24,11 @@ STS suite , trello, notion , Git Readme, PPT
 
 ## 타임라인 :
 
-[Trello](https://trello.com/b/o3e9VVuB/soulfood)
+[https://trello.com/b/o3e9VVuB/starent]
 
 ## 깃 :
 
-[https://github.com/1000bang/soulfood](https://github.com/1000bang/starEnt)
+[https://github.com/1000bang/starEnt](https://github.com/1000bang/starEnt)
 
 ![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c1e2753d-f03e-4a8d-90b0-ff8100b26b26/Untitled.png)
 
@@ -115,14 +116,6 @@ STS suite , trello, notion , Git Readme, PPT
 
 ---
 
-여기서부터 차후에 수정
-
-- 카테고리
-    - 
-- 굿즈
-    - id
-- 구매
-- 장바구니
 
 ## 기능
 
