@@ -1,4 +1,4 @@
- * {
+* {
             margin: 0;
             padding: 0;
             margin: 0 auto;
@@ -54,34 +54,38 @@
             background-size: 100%;
             position: relative;
         }
-        #image .imgs{
+        #image .imageBox{
             width: 100%;
             height: 600px;
             overflow: hidden;
         }
 
-        #image .imgs ul{
+        #image .imageBox ul{
             width: 100%;
             position: relative;
         }
-        #image .imgs li{
+        #image .imageBox ul li{
             width: 100%;
+            height: 600px;
+            object-fit: contain;
             position: absolute;
         }
-        #image .imgs li .img1{
+        #image .imageBox ul li img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        #image .imageBox ul li.img1{
             top: 0;
             left: 0;
-            background: url(./img/iu.jpeg) no-repeat -30px;
         }
-        #image .imgs li .img2{
+        #image .imageBox li.img2{
             top: 0;
             left: 100%;
-            background: url(./img/iuu.jpeg) no-repeat -30px;
         }
-        #image .imgs li .img3{
+        #image .imageBox li.img3{
             top: 0;
             left: 200%;
-            background: url(./img/iuuu.jpeg) no-repeat -30px;
         }
         /* footer */
         #footer{
@@ -90,6 +94,8 @@
             display: flex;
             align-items: center;
             background-color: #888;
+            margin-top: 20px;
+            
         }
         #endLogo{
             width: 150px;
@@ -138,8 +144,7 @@
             margin-top: 60px;
         }
         #endSNS ul li{
-            width: 32px;
-            height: 33px;
-            border: 1px solid #000;
+            width: 30px;
+            height: 30px;
             border-radius: 50%;
         }
