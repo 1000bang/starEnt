@@ -1,5 +1,7 @@
 package com.threebee.starentertainment.model;
 
-public enum Status {
+public enum Membership {
 
+	BRONZE, SILVER, GOLD
+	
 }
