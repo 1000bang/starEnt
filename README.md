@@ -24,13 +24,14 @@ STS suite , trello, notion , Git Readme, PPT
 
 ## 타임라인 :
 
-[https://trello.com/b/o3e9VVuB/starent]
+[https://trello.com/b/o3e9VVuB/starent](https://trello.com/b/o3e9VVuB/starent)
 
 ## 깃 :
 
 [https://github.com/1000bang/starEnt](https://github.com/1000bang/starEnt)
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c1e2753d-f03e-4a8d-90b0-ff8100b26b26/Untitled.png)
+##
+
 
 ## 엔티티
 
@@ -42,11 +43,7 @@ STS suite , trello, notion , Git Readme, PPT
     - birth
     - email
     - status
-    - role
-        - user, manager, entertainer
-            
-            ⇒ view 가 완전히 다름 
-            
+    - role        
     - membership
     - addressEntity address
 
@@ -63,12 +60,12 @@ STS suite , trello, notion , Git Readme, PPT
 - newsEntity
     - id
     - title
-    - content (서머노트 사진)
+    - content 
 
-- boardEntity (보드 댓글기능 있음 권한은 star에게만 / 삭제기능은 관리자, entertainer )
+- boardEntity 
     - id
     - title
-    - content 서머노트
+    - content 
     - list<reply>
     - userid 작성자
     - starid  어떤 스타에게 쓰는지 (아이디)
