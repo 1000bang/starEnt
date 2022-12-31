@@ -4,14 +4,14 @@
 
 <br><br>
 
-<<br>
+<br>
 <br>
 <div class="container">
 
-	<button class="btn bg-secondary" onclick="history.back();">돌아가기</button>
-	<c:if test="${news.user.id == principal.user.id}">
-		<a class="btn btn-warning" id="" href="/board/${news.id}/update_form">수정</a>
-		<a class="btn btn-danger" id="" href="/board/delete/${news.id}">삭제</a>
+	<button class="btn btn-outline-secondary" onclick="history.back();">돌아가기</button>
+	<c:if test="${news.user.id == principal.id}">
+		<a class="btn btn-outline-warning" id="" href="/board/${news.id}/update_form">수정</a>
+		<a class="btn btn-outline-danger" id="" href="/board/delete/${news.id}">삭제</a>
 	</c:if>
 	<br /> <br /> <br />
 

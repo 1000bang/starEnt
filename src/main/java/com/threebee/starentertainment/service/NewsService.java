@@ -37,9 +37,9 @@ public class NewsService {
 		membershipRepository.save(member);
 		
 		UserEntity user1 =  UserEntity.builder()
-		.username("홍길동123")
+		.username("홍길동")
 		.birth("12/12")
-		.password("123sadasdsa")
+		.password("asd123")
 		.email("123@gmail.com")
 		.id(0)
 		.loginType(LoginType.OWN)
