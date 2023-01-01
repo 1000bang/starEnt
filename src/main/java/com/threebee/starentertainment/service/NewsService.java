@@ -1,14 +1,10 @@
 package com.threebee.starentertainment.service;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
-import com.threebee.starentertainment.entity.AddressEntity;
 import com.threebee.starentertainment.entity.MembershipEntity;
 import com.threebee.starentertainment.entity.NewsEntity;
 import com.threebee.starentertainment.entity.UserEntity;
@@ -31,13 +27,11 @@ public class NewsService {
 	IMembershipRepository membershipRepository;
 	
 	public void writeNews(NewsEntity news, int user) {
-		List<AddressEntity> a = new ArrayList<>();
-		AddressEntity.builder().address("112").detailAddress("asd").build();
 		MembershipEntity member = MembershipEntity.builder().id(0).rate(15).membership(Membership.BRONZE).build();
 		membershipRepository.save(member);
 		
 		UserEntity user1 =  UserEntity.builder()
-		.username("홍길동")
+		.username("홍길동") 
 		.birth("12/12")
 		.password("asd123")
 		.email("123@gmail.com")
@@ -46,7 +40,6 @@ public class NewsService {
 		.name("홍길동")
 		.membership(member)
 		.phoneNumber("010-123-123")
-		.address(a)
 		.build();
 		
 		

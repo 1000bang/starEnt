@@ -15,7 +15,6 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
-import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.Size;
@@ -35,7 +34,7 @@ import lombok.ToString;
 @Entity
 @Data
 @ToString
-@NoArgsConstructor
+@NoArgsConstructor  
 @AllArgsConstructor
 @Builder
 @Table(name = "USERS")
@@ -63,12 +62,8 @@ public class UserEntity {
 		@Column(length = 100, nullable = false)
 		private String phoneNumber;
 		
-		@Column(length = 100, nullable = false)
+//		@Column(length = 100, nullable = false)
 		private String birth;
-		
-		@OneToMany(mappedBy = "user", fetch = FetchType.EAGER, cascade = CascadeType.REMOVE)
-		@JsonIgnoreProperties("user")
-		private List<AddressEntity> address;
 				
 		@Enumerated(EnumType.STRING)
 		private UserRole role;

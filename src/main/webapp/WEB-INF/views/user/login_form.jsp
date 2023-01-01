@@ -8,7 +8,7 @@
 <div class="container">
 	<h2 class="h2">로그인</h2>
 	<br />
-	<form action="/login/check" method="post">
+	<form action="/auth/loginProc" method="post">
 		<div class="form-group">
 			<input type="text" class="form-control" placeholder="Enter usernmae"
 				id="username" name="username" value="홍길동">

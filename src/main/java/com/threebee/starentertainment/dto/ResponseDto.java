@@ -13,7 +13,7 @@ public class ResponseDto<T> {
 
 	HttpStatus httpStatus;
 	
-	T body;
+	T body;  
 
 }
  

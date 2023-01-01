@@ -7,11 +7,17 @@
 <br>
 <div class="container">
 	<form action="">
+	
 		<div class="form-group"><input type="text"
 				class="form-control" placeholder="Enter usernmae" id="username"
 				value="홍길동">
-
 		</div>
+		
+		<div class="form-group"><input type="text"
+				class="form-control" placeholder="Enter nicknmae" id="nicknmae"
+				value="길동123">
+		</div>
+		
 		<div class="form-group"> <input type="password"
 				class="form-control" placeholder="Enter password" id="password"
 				value="asd123">

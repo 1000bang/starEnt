@@ -74,10 +74,8 @@
 					<li><a href="#">Audition</a></li>
 					<li><a href="#">Board</a></li>
 					<c:if test="${empty sessionScope.principal}">
-
-
-						<li><a href="/login">login</a></li>
-						<li><a href="#"> join</a></li>
+						<li><a href="/auth/login_form">login</a></li>
+						<li><a href="/auth/join_form"> join</a></li>
 					</c:if>
 
 				</ul>
