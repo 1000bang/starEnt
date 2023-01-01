@@ -46,7 +46,7 @@ let index = {
 
 		$.ajax({
 			type: "Put",
-			url: `/api/news/${$("#board-id").attr("data-id")}`,
+			url: `/api/news/${$("#board-id").attr("data-id")}/update`,
 			data: JSON.stringify(data),
 			contentType: "application/json; charset = utf-8",
 			dataType: "json"

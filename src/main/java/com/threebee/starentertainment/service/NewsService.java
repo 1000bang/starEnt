@@ -3,6 +3,8 @@ package com.threebee.starentertainment.service;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.transaction.Transactional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -69,5 +71,27 @@ public class NewsService {
 			return new IllegalArgumentException("해당 글을 찾을 수 없습니다. ");
 		});
 	}
+
+	@Transactional
+	public void updateNews(int id, NewsEntity news) {
+		NewsEntity newsItem = getNewsDetail(id);
+		newsItem.setContent(news.getContent());
+		newsItem.setTitle(news.getTitle());
+	}
+
+	@Transactional
+	public void deleteNews(int id) {
+		newsRepository.deleteById(id);
+		
+	}
+
+	@Transactional
+	public void setCount(int id) {
+		NewsEntity newsItem = getNewsDetail(id);
+		int count = newsItem.getCount();
+		newsItem.setCount(count+1);
+		
+	}
+	
 
 }

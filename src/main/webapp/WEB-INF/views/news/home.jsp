@@ -14,7 +14,7 @@
 				<th>제목</th>
 				<th>작성자</th>
 				<th>날짜</th>
-
+				<th>조회수</th>
 			</tr>
 		</thead>
 
@@ -25,6 +25,7 @@
 				<td>${num.title}</td>
 				<td>${num.user.username}</td>
 				<td>${num.createDate}</td>
+				<td>${num.count}</td>
 			</tr>
 		</tbody>
 		</c:forEach>

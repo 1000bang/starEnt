@@ -14,6 +14,7 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.validation.constraints.Size;
 
+import org.hibernate.annotations.ColumnDefault;
 import org.hibernate.annotations.CreationTimestamp;
 
 import lombok.AllArgsConstructor;
@@ -46,5 +47,8 @@ public class NewsEntity {
 	
 	@CreationTimestamp 
 	private Timestamp createDate;
+	
+	@ColumnDefault("0") 
+	private int count; 
 	
 }
