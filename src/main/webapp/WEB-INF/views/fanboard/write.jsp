@@ -11,9 +11,9 @@
 	<div class="form-group">
 			<select class="custom-select mb-1 form-control" id="entertainer">
 				<option selected>대상 </option>
-				<option value="아이유">아이유 </option>
-				<option value="이종석">이종석 </option>
-				<option value="장기하">장기하 </option>
+				<c:forEach var="art" items="${artist}">
+				<option value="${art.name}">${art.name} </option>
+				</c:forEach>
 			</select>
 		</div>
 		<div class="form-group">

@@ -37,8 +37,14 @@ public class FanBoardService {
 	public void writeBoard(String name, FanBoardEntity fanEntity) {
 		EntertainerEntity enter = entertainerRepository.findbyName(name);
 		fanEntity.setEntertainer(enter);
+		fanEntity.setUserId(null);
 		fanBoardRepository.save(fanEntity);
 		
+	}
+
+	public List<FanBoardEntity> findAllBoard() {
+		
+		return fanBoardRepository.findAll();
 	}
 
 	

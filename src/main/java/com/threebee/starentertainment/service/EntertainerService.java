@@ -40,6 +40,11 @@ public class EntertainerService {
 		entertainerRepository.save(artist);
 		
 	}
+
+	public List<EntertainerEntity> findAllArtist() {
+		return entertainerRepository.findAll();
+		
+	}
 	
 	
 
