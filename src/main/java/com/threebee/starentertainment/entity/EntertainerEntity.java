@@ -2,6 +2,7 @@ package com.threebee.starentertainment.entity;
 
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -33,28 +34,26 @@ public class EntertainerEntity {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	
-	@Column
+	@Column(nullable = false)
 	private String name;
 	
-	@Column
+	@Column(nullable = false)
 	private String birth;
 	
-//	@Column
-//	private List<String> activity;
+	@Column
+	private String unit;
 	
-	@ManyToOne
-	@JoinColumn(name = "unitId") 
-	private UnitEntity unit;
+
 	
-	@OneToMany(mappedBy = "entertainer", fetch = FetchType.LAZY) 
+	@OneToMany(mappedBy = "entertainer", fetch = FetchType.LAZY, cascade = CascadeType.REMOVE) 
 	@JsonIgnoreProperties("entertainer") 
 	private List<MusicEntity> music;
 	
-	@OneToMany(mappedBy = "entertainer", fetch = FetchType.LAZY) 
+	@OneToMany(mappedBy = "entertainer", fetch = FetchType.LAZY, cascade = CascadeType.REMOVE) 
 	@JsonIgnoreProperties("entertainer") 
 	private List<MovieEntity> movie;
 	
-	@OneToMany(mappedBy = "entertainer", fetch = FetchType.LAZY) 
+	@OneToMany(mappedBy = "entertainer", fetch = FetchType.LAZY, cascade = CascadeType.REMOVE) 
 	@JsonIgnoreProperties("entertainer") 
 	private List<ProgramEntity> entertainment;
 	

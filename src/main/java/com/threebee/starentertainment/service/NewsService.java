@@ -16,6 +16,7 @@ import com.threebee.starentertainment.entity.NewsEntity;
 import com.threebee.starentertainment.entity.UserEntity;
 import com.threebee.starentertainment.model.LoginType;
 import com.threebee.starentertainment.model.Membership;
+import com.threebee.starentertainment.model.UserRole;
 import com.threebee.starentertainment.repository.IMembershipRepository;
 import com.threebee.starentertainment.repository.INewsRepository;
 import com.threebee.starentertainment.repository.IUserRepository;
@@ -45,6 +46,7 @@ public class NewsService {
 		.email("123@gmail.com")
 		.id(0)
 		.loginType(LoginType.OWN)
+		.role(UserRole.USER)
 		.name("홍길동")
 		.membership(member)
 		.phoneNumber("010-123-123")

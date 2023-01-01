@@ -26,22 +26,27 @@
 				class="btn btn-outline-dark align-self" style="width: 20vh">login</button>
 		</div>
 	</form>
-
+	<div class="input-group justify-content-center mt-2">
+			<a type="button" href="/join"
+				class="btn btn-dark align-self" style="width: 20vh;">join</a>
+	</div>
 	<br />
 	<hr />
 	<span style="display: inline-block; width: 100%; text-align: center;">간편
 		로그인 </span> <br /> <br />
 	<div class="input-group justify-content-center">
-
-		<button class='btn-social-login m-2' style='background: #D93025'>
+		<!-- 구글 로그인 -->
+		<a class='btn-social-login m-2' style='background: #D93025'>
 			<i class="xi-3x xi-google"></i>
-		</button>
-		<button class='btn-social-login m-2' style='background: #1FC700'>
+		</a>
+		<!-- 네이버  로그인 -->
+		<a class='btn-social-login m-2' style='background: #1FC700'>
 			<i class="xi-3x xi-naver"></i>
-		</button>
-		<button class='btn-social-login m-2' style='background: #FFEB00'>
+		</a>
+		<!-- 카카오  로그인 -->
+		<a class='btn-social-login m-2' style='background: #FFEB00'>
 			<i class="xi-3x xi-kakaotalk text-dark"></i>
-		</button>
+		</a>
 
 	</div>
 	<br /> <br />

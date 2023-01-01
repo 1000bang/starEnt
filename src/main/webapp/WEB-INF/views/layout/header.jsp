@@ -66,20 +66,39 @@
 			</div>
 			<nav id="nav">
 				<ul>
+				<c:choose>
+				<c:when test="${sessionScope.principal.role eq 'USER'}">
 					<li><a href="#">Company</a></li>
-					<li><a href="#">Artist</a></li>
+					<li><a href="/artist">Artist</a></li>
 					<li><a href="#">MultiMedia</a></li>
 					<li><a href="#">Goods</a></li>
 					<li><a href="/news">News</a></li>
 					<li><a href="#">Audition</a></li>
-					<li><a href="#">Board</a></li>
-					<c:if test="${empty sessionScope.principal}">
-
-
-						<li><a href="/login">login</a></li>
-						<li><a href="#"> join</a></li>
-					</c:if>
-
+					<li><a href="/board">Board</a></li>
+					<c:choose>
+					<c:when test="${empty sessionScope.principal}">
+						<li><a href="/login">login</a></li>		
+					</c:when>
+					<c:otherwise>
+						<li><a href="/logout">logout</a></li>	
+					</c:otherwise>
+					</c:choose>
+				</c:when>
+				<c:otherwise>
+					<li><a href="/artist/add">Artist</a></li>
+					<li><a href="/goods">Goods</a></li>
+					<li><a href="/news">News</a></li>
+					<li><a href="/board">Board</a></li>
+					<c:choose>
+					<c:when test="${empty sessionScope.principal}">
+						<li><a href="/login">login</a></li>		
+					</c:when>
+					<c:otherwise>
+						<li><a href="/logout">logout</a></li>	
+					</c:otherwise>
+					</c:choose>
+					</c:otherwise>
+				</c:choose>
 				</ul>
 			</nav>
 
